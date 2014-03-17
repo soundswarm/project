@@ -1,0 +1,43 @@
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+header {
+	background-color:red;
+}
+
+.user_tn {
+	border-bottom:solid 1px #ccc;
+	cursor:pointer;
+	overflow:hidden;
+	padding:10px 10px 5px;
+	&:hover {
+		background-color:#fcc;
+	}
+	ul {
+		margin-top:5px;
+		li {
+			font-size:18px;
+			display:inline-block;
+			margin:0;
+			span {
+				font-size:12px;
+				font-weight:300;
+				line-height:18px;
+			}
+		}
+		li:nth-child(2n+1) {
+			width:120px
+		}
+	}
+	.photo {
+		float:left;
+		margin-right:10px;
+		width:100px;
+		img {
+			width:60px;
+		}
+		p {
+			font-weight:bold;
+			margin:0; padding:0;
+		}
+	}
+}
